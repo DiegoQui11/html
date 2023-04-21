@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <title>Factura de Venta</title>
+    <style>
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            padding: 10px;
+        }
+
+        body{
+            border: 3px solid black;
+            border-collapse: collapse;
+            background-image: url("https://th.bing.com/th/id/R.959928e5bb5446f8cd0efb0c26958711?rik=G7VkwXNWHDiZFQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_mQC7nwMfjhk%2fSZF0ydwCgeI%2fAAAAAAAAACI%2fZrb8DkGUPNI%2fw1200-h630-p-k-no-nu%2fSENA%2b-%2bCOL2.jpg&ehk=6rCPmChIRG%2fPgVTIWOiM%2b%2bZevL05PhNfpn6SGYm7nvM%3d&risl=&pid=ImgRaw&r=0.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+    <table style="background-color: rgb(133, 143, 82); color: #000000; font-weight: bold">
+        <tr>
+        <td><div class="Logo"><img src="https://lostramites.com.co/wp-content/uploads/Logo-del-sena-Verde.jpg" alt="Logotipo del sena" width="200" height="200"/></td></div>
+        <td style="width: 100%" height="200"><h1><blockquote>Factura de venta</blockquote></h1></td>
+        </tr> 
+    </table>
+    </header>
+    <blockquote>
+<table>
+            <p>Nombres</p>
+            <form action="datos.php" method="GET">
+            <input type="text" placeholder="Escribe Tu Nombre">
+        </form>
+
+    <p>Apellidos</p>
+        <form action="datos.php" method="GET">
+            <input type="text" placeholder="Escribe Tu Apellido">
+        </form>
+    </blockquote>
+    <br> 
+    <blockquote>
+</table>
+            <table style="width: 30%;">
+        <tr>  
+            <th>Genero:</th>
+                <tr>
+                    <td><input type="radio" name="Genero">Hombre</td>
+                    <td><input type="radio" name="Genero">Mujer</td>
+                    <td><input type="radio" name="Genero">Otro</td>
+                </tr>
+            <th>Forma de pago:</th>
+                <tr>
+                    <td><input type="radio" name="pago">Efectivo</td>
+                    <td><input type="radio" name="pago">Tarjeta</td>
+                    <td><input type="radio" name="pago">Cheque</td>
+                </tr>
+        </tr>
+    </blockquote></table><br><br>
+<center>
+    <input type="button" value="Guardar">
+</center>
+</body>
+
+</html>
