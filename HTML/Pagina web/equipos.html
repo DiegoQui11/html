@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo equipos.css">
+    <title>EQUIPOS</title>
+</head>
+<body>
+    <hearder>
+        <footer>
+            <nav>
+                <a href="PaginaWeb.html">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="contacto.html">Contactenos</a>
+            </nav>
+        </footer>
+    </hearder>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/estacion3.png" alt="">
+                    </div>
+                    <p class="descripcion">ESTACION TOPKON</p>
+                    <span class="precio">ls-500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/tripode.png" alt="">
+                    </div>
+                    <p class="descripcion" id>Tripode original</p>
+                    <span class="precio">Topo12</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/baston.png" alt="">
+                    </div>
+                    <p class="descripcion">baston topkon
+                    </p>
+                    <span class="precio">original</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/prisma.png" alt="">
+                    </div>
+                    <p class="descripcion">prisma serie</p>
+                    <span class="precio">Cristal</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/sub-nivel.png" alt="">
+                    </div>
+                    <p class="descripcion">sub-nivel</p>
+                    <span class="precio">serie 123</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/caja.png" alt="">
+                    </div>
+                    <p class="descripcion">Caja de estacion</p>
+                    <span class="precio">Original</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/maquinaria.png" alt="">
+                    </div>
+                    <p class="descripcion">Maquinaria</p>
+                    <span class="precio">modelo 2014</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/medida.png" alt="">
+                    </div>
+                    <p class="descripcion">Estacion de medida</p>
+                    <span class="precio">Modelo 2000</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/estacion3.png" alt="" id="img">
+                <h2 id="modelo">ESTACION</h2>
+                <p id="descripcion">lol</p>
+
+                <span class="precio" id="precio">$ 130</span>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <footer>
+        <h2 class="titulo-final">&copy; Servicios Topograficos | Gaes 7</h2>
+    </footer>
+
+    <script src="Java/script.js"></script>
+</body>
+</html>
