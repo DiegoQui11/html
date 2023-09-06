@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up | By Code Info</title>
+    <link rel="stylesheet" href="css/registro.css" />
+    <link rel="shortcut icon" href="Imagen1.jpg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <div class="signup-box">
+      <h1>Registrate</h1>
+      <h4>inicia tus proyectos con nostros</h4>
+      <form>
+        <label>Primer Nombre</label>
+        <input type="text" placeholder="" />
+        <label>Apellidos</label>
+        <input type="text" placeholder="" />
+        <label>Email</label>
+        <input type="email" placeholder="" />
+        <label>Password</label>
+        <input type="password" placeholder="" />
+        <label>Confirm Password</label>
+        <input type="password" placeholder="" />
+        <input type="button" value="Enviar" />
+      <closeform></closeform></form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      ¿Ya tienes una cuenta? <a href="iniciosesion.html">Login here</a>
+    </p>
+
+    <script>
+  
+      const btnEnviar = document.getElementById('btn-enviar');
+      
+      const validación = (e) => {
+        e.preventDefault();
+        const nombreDeUsuario = document.getElementById('usuario');
+        const direcciónEmail = document.getElementById('password');
+        if (usuario.value === "") {
+          alert("Por favor, escribe tu nombre de usuario.");
+          usuario.focus();
+          return false;
+        }
+          
+        if (password.value === "") {
+          alert("Por favor escribe una contrasña");
+          email.focus();
+          return false;
+        }
+      
+        if (!emailVálido(email.value)) {
+          alert("Por favor, escribe una contraseña valida");
+          emailAddress.focus();
+          return false;
+        }
+        
+        return true; //Se pueden enviar los datos del formulario al servidor
+      }
+      
+      const emailVálido = email => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+      
+      submitBtn.addEventListener('click', validate);
+      
+      </script>
+  </body>
+</html>
+

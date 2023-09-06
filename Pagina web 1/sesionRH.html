@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio sesion</title>
+    <link rel="icon" href="recursos1.jpg">
+    <link rel="stylesheet" href="css/sesionRH.css">
+    
+</head>
+<body>
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html" class="logo">
+              <i class="fas fa-swatchbook"></i> Servicios Topograficos
+            </a>
+            <nav class="navbar">
+              <a href="index.html" class="active">Inicio</a>
+            </nav>
+          </header>
+    <input type="checkbox" id="show">
+    <label for="show" class="show-btn">Mostrar formulario</label>
+
+    <div class="container">
+        <label for="show" class="close-btn" title="close"></label>
+        <h1>Bienvenidos</h1>
+        <form action="#">
+            <label>Correo o celular</label>
+            <input type="text">
+            <label>Contraseña</label>
+            <input type="password">
+            <a href="certificado.html" class="button">Ingresar</a>
+            <div class="link">¿Olvidaste tu contraseña? <a href="#">Recuperar</a></div>
+            
+        <closeform></closeform></form>
+    </div>
+
+    <script>
+  
+      const btnEnviar = document.getElementById('btn-enviar');
+      
+      const validación = (e) => {
+        e.preventDefault();
+        const nombreDeUsuario = document.getElementById('usuario');
+        const direcciónEmail = document.getElementById('password');
+        if (usuario.value === "") {
+          alert("Por favor, escribe tu nombre de usuario.");
+          usuario.focus();
+          return false;
+        }
+          
+        if (password.value === "") {
+          alert("Por favor escribe una contrasña");
+          email.focus();
+          return false;
+        }
+      
+        if (!emailVálido(email.value)) {
+          alert("Por favor, escribe una contraseña valida");
+          emailAddress.focus();
+          return false;
+        }
+        
+        return true; //Se pueden enviar los datos del formulario al servidor
+      }
+      
+      const emailVálido = email => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+      
+      submitBtn.addEventListener('click', validate);
+      
+      </script>
+      
+</body>
+</html>
